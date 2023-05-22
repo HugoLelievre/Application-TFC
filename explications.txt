@@ -1,0 +1,25 @@
+Marche à suivre pour utiliser l'appli 
+
+1 - Ouvrir un terminal windows powershell
+
+2 - Se placer dans le bon répertoire avec la commande :
+cd chemin_vers_le_dossier/"Application TFC"
+(N'oubliez pas de remplacer "chemin_vers_le_dossier" par le vrai chemin)
+
+
+### A faire une seule fois ###
+
+3 - Installer un interpréteur python
+Taper 'python' dans le terminal ouvrira une page microsoft store pour installer un interpréteur python. Installez le
+
+4 - Installer les bibliothèques à partir du fichier requirements.txt
+Une fois l'interpréteur python installé, exécuter la commande suivante :
+pip install -r requirements.txt
+
+### fin ###
+
+
+5 - Lancer l'application
+Utiliser la commande suivante : python app.py
+
+L'application devrait se lancer dans votre navigateur web par défaut. Si ce n'est pas le cas, ouvrez votre navigateur web et allez à l'adresse http://127.0.0.1:8050/
