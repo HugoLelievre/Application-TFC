@@ -8,6 +8,8 @@ encoded_logo = base64.b64encode(open('data/logo.png', 'rb').read())
 df_quantiles_5_min = pd.read_csv('data/df_infos_distributions_5min.csv')
 df_quantiles_15_min = pd.read_csv('data/df_infos_distributions_15min.csv')
 
+df_quantiles_5_min = df_quantiles_5_min.loc[((df_quantiles_5_min.min_fin_fenetre <= 45)|(df_quantiles_5_min.moment != 'MT1'))&(df_quantiles_5_min.min_fin_fenetre <= 45)].reset_index(drop=True)
+df_quantiles_15_min = df_quantiles_15_min.loc[((df_quantiles_15_min.min_fin_fenetre <= 45)|(df_quantiles_15_min.moment != 'MT1'))&(df_quantiles_15_min.min_fin_fenetre <= 45)].reset_index(drop=True)
 
 # Définir la couleur des cases du tableau 
 def DefineStyleConditional(df, seuil_1, seuil_2, seuil_3, seuil_4, seuil_5):
